@@ -1,0 +1,8 @@
+---
+packages:
+  - jq
+  - bind-utils
+  - git
+  - htop
+  - python36
+  - python36-pip
