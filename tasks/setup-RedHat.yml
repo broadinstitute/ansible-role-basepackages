@@ -2,3 +2,8 @@
 - name: ensure a list of packages installed
   yum:
     name: "{{ packages }}"
+
+- name: put SELinux in permissive mode
+  selinux:
+    policy: targeted
+    state: permissive
