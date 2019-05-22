@@ -4,4 +4,3 @@ base_packages:
   - bind-utils
   - git
   - htop
-additional_packages:
