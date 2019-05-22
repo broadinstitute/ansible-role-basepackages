@@ -1,8 +1,7 @@
 ---
-packages:
+base_packages:
   - jq
   - bind-utils
   - git
   - htop
-  - python36
-  - python36-pip
+additional_packages:

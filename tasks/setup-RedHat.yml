@@ -1,7 +1,11 @@
 ---
-- name: ensure a list of packages installed
+- name: ensure a list of base packages installed
   yum:
-    name: "{{ packages }}"
+    name: "{{ base_packages }}"
+
+- name: ensure a list of additional packages installed
+  yum:
+    name: "{{ additional_packages }}"
 
 - name: put SELinux in permissive mode
   selinux:

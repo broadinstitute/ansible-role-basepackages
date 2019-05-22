@@ -1,4 +1,4 @@
 ---
 - name: Install a list of packages
   apt:
-    name: "{{ packages }}"
+    name: "{{ base_packages }}"
