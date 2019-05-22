@@ -6,6 +6,7 @@
 - name: ensure a list of additional packages installed
   yum:
     name: "{{ additional_packages }}"
+  when: additional_packages is defined
 
 - name: put SELinux in permissive mode
   selinux:
